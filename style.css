@@ -1,0 +1,266 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilo do Modal */
+.modal-content {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo do body */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(162, 255, 246, 1) 0%, rgba(153, 220, 255, 1) 35%, rgba(125, 210, 255, 1) 100%);
+}
+
+/* Estilo da seção principal */
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Garante que a seção principal ocupe a altura total da viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    position: relative;
+    width: 100%;
+    padding: 20px 50px; /* Ajuste o padding conforme necessário */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8); /* Adiciona um fundo sutil ao cabeçalho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Logo */
+header .logo {
+    color: #000;
+    font-size: 24px; /* Tamanho da fonte ajustado */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700; /* Ajustado para um estilo mais limpo */
+    letter-spacing: 1px;
+}
+
+/* Navegação */
+header .navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .navigation a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 15px; /* Ajuste no padding */
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s; /* Transição suave para fundo e cor */
+}
+
+header .navigation a:not(:last-child) {
+    margin-right: 20px; /* Ajuste do espaçamento entre os itens */
+}
+
+header .navigation a:hover {
+    background: #fff;
+    color: #007bff; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo do conteúdo */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaço entre os cards */
+    max-width: 1000px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Card */
+.card {
+    flex: 1 1 calc(25% - 20px); /* Adaptação para 4 cards por linha */
+    max-width: calc(25% - 20px); /* Largura máxima para cada card */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.6); /* Sombra sutil para o card */
+    border-radius: 10px; /* Borda arredondada */
+    background-color: #fff; /* Fundo branco para contraste */
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do card */
+    transition: transform 0.6s ease, box-shadow 0.7s ease; /* Transição suave */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Move o card para cima em 10px */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9); /* Aumenta a sombra para dar o efeito de flutuação */
+}
+
+/* Imagem do Card */
+.card img {
+    width: 100%; /* Faz com que a imagem ocupe a largura total do card */
+    height: 200px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
+/* Info dentro do Card */
+.info {
+    flex: 1; /* Faz com que a área de info ocupe o espaço restante */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 15px; /* Padding ajustado */
+    background-color: rgb(231, 247, 255); /* Cor de fundo */
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    justify-content: space-between; /* Garante que o botão "Ler mais" fique no final */
+}
+
+.info h2 {
+    margin-bottom: 10px; /* Espaçamento inferior */
+    color: #000;
+    font-size: 16px; /* Ajuste do tamanho da fonte */
+}
+
+/* Estilo do Texto e Botão dentro do Card */
+.info .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 800; /* Ajustado para um estilo mais limpo */
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.4; /* Ajuste do espaçamento entre linhas */
+    margin: 0; /* Remove margens para ajustar o layout */
+    flex: 1; /* Faz com que o parágrafo ocupe o espaço restante */
+}
+
+.info .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.4; /* Ajuste do espaçamento entre linhas */
+    margin: 0; /* Remove margens para ajustar o layout */
+    flex: 1; /* Faz com que o parágrafo ocupe o espaço restante */
+}
+
+.semaforo-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.button-readMore {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Seções de texto */
+.text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+.tituloProjeto {
+    color: #000;
+    font-size: 24px; /* Tamanho da fonte ajustado */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700; /* Ajustado para um estilo mais limpo */
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .navigation {
+        margin-top: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header .navigation a {
+        margin-right: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .card {
+        flex: 1 1 100%; /* Adapta os cards para ocupar toda a largura */
+        max-width: 100%;
+    }
+
+    .text-section {
+        padding: 30px;
+    }
+
+    .tituloProjeto {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 20px; /* Ajuste para telas menores */
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
