@@ -82,6 +82,7 @@ header .navigation a:hover {
 }
 
 /* Estilo do conteúdo */
+/* Estilo do conteúdo */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -89,12 +90,14 @@ header .navigation a:hover {
     max-width: 1000px;
     padding: 20px;
     margin: 0 auto;
+    justify-content: center; /* Centraliza os cards */
 }
 
 /* Card */
 .card {
     flex: 1 1 calc(25% - 20px); /* Adaptação para 4 cards por linha */
     max-width: calc(25% - 20px); /* Largura máxima para cada card */
+    min-width: 200px; /* Largura mínima para cada card */
     box-sizing: border-box; /* Inclui padding e border na largura total */
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.6); /* Sombra sutil para o card */
     border-radius: 10px; /* Borda arredondada */
@@ -158,14 +161,15 @@ header .navigation a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center; /* Garante que o texto seja centralizado horizontalmente */
     padding-top: 7px;
     font-weight: 100;
     letter-spacing: 1px;
     font-size: 16px;
     color: #000;
     line-height: 1.4; /* Ajuste do espaçamento entre linhas */
-    margin: 0; /* Remove margens para ajustar o layout */
-    flex: 1; /* Faz com que o parágrafo ocupe o espaço restante */
+    margin: 0;
+    flex: 1;
 }
 
 .semaforo-image {
@@ -201,8 +205,10 @@ header .navigation a:hover {
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    color: white;
+    color: #000;
+    font-weight: 800;
     text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 
 .tituloProjeto {
@@ -210,12 +216,13 @@ header .navigation a:hover {
     font-size: 24px; /* Tamanho da fonte ajustado */
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 700; /* Ajustado para um estilo mais limpo */
-    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px;
     font-family: "Poppins", sans-serif;
-    font-weight: 800;
+    font-weight: 900;
+    font-size: 13px;
 }
 
 /* Responsividade */
