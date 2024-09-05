@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ARDUINO</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
 </head>
 <body>
@@ -16,76 +17,20 @@
             <div class="navigation">
                 <a href="index.html">HOME</a>
                 <a href="index.html">ABOUT</a>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">CONTACT</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">CONTACT</a>
             </div>
         </header>
 
         <div class="text-section">
+            <h1>Olá, este site está em manutenção. Ainda estamos adicionando os relatórios aos cards</h1>
             <h1>GALERIA DE PROJETOS</h1>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Relatório 01</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>1. Simulação no Tinkercad:</p>
-                        <p>Iniciamos o projeto utilizando o Tinkercad, uma ferramenta de simulação online que permite criar e testar circuitos eletrônicos virtualmente. Essa etapa foi crucial para identificar possíveis problemas antes de construir o circuito físico, garantindo que o design estivesse correto e funcional.</p>
-
-                        <p>2. Configuração da IDE do Arduino:</p>
-                        <p>Após validar o circuito no simulador, baixamos a IDE do Arduino para desenvolver o código que controlaria o semáforo. Nesse código, definimos as portas digitais às quais os LEDs seriam conectados e implementamos a lógica de temporização para alternar entre as luzes.</p>
-
-                        <p>3. Driver e Configuração da Placa:</p>
-                        <p>Durante o processo, descobrimos que nossa placa Arduino era de origem chinesa, o que exigiu a instalação de um driver específico para que o computador a reconhecesse corretamente. Após instalar o driver, configuramos a IDE para utilizar a porta COM3, que correspondia à conexão do Arduino com o notebook.</p>
-
-                        <p>4. Montagem do Circuito:</p>
-                        <p>Enquanto alguns membros da equipe trabalhavam na codificação, outros montavam o circuito físico de acordo com o design testado no Tinkercad. Utilizamos uma protoboard para realizar as conexões entre os LEDs, resistores e o Arduino.</p>
-
-                        <p>5. Transferência do Código e Testes:</p>
-                        <p>Com o circuito montado, transferimos o código para a placa Arduino. Durante os testes, identificamos que o LED verde do kit estava queimado. Testamos o circuito com diferentes resistores e refizemos algumas conexões, mas o LED continuava não funcionando. Apesar desse contratempo, o restante do sistema funcionou conforme o esperado.</p>
-
-                        <p>6. Conclusão:</p>
-                        <p>O projeto foi bem-sucedido, permitindo que aplicássemos conhecimentos de eletrônica e programação de maneira prática. A simulação no Tinkercad ajudou a evitar erros na montagem física, e a única dificuldade encontrada foi o LED defeituoso, que não comprometeu o funcionamento geral do semáforo. O processo como um todo foi tranquilo, e conseguimos alcançar os objetivos propostos. Além disso, o projeto nos proporcionou uma visão clara das etapas necessárias para o desenvolvimento de sistemas eletrônicos, desde a simulação até a implementação física.</p>
-
-                        <img src="./img/img01-SemaforoArduino.jpg" alt="" style="width: 470px; height: 300px; border-radius: 5px;"/>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Relatório 02</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>O objetivo deste trabalho é regular a luminosidade de uma lâmpada de LED através de um potenciômetro e um Arduino. Através da mudança na resistência do potenciômetro, conseguimos ajustar a voltagem enviada para o LED, alterando assim sua intensidade de brilho. Esse tipo de controle é comum em várias aplicações, como em reguladores de luz e controles de volume.</p>
-
-                        <p>Inicialmente, montamos o circuito na protoboard. Ligamos o pino central do potenciômetro à entrada analógica A0 do Arduino. As outras extremidades do potenciômetro foram conectadas ao GND e ao 5V do Arduino. O LED foi conectado ao pino digital 9 do Arduino usando um resistor de 220 Ω, e o lado negativo do LED foi ligado ao GND.</p>
-
-                        <p>Essa atividade foi muito educativa. Aprendemos mais sobre potenciômetros e modulação PWM, além de praticar a montagem de circuitos e programação utilizando Arduino. Mal posso esperar para usar esses aprendizados em futuros projetos.</p>
-                        <img src="./img/img02-PotenciometroArduino.jpg" alt="" style="width: 470px; height: 300px; border-radius: 5px;"/>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Placeholder para os modais gerados dinamicamente -->
+        <div id="modal-container"></div>
 
         <div class="container">
-            <div  data-bs-toggle="modal" data-bs-target="#exampleModal"  class="card">
+            <div class="card" data-bs-toggle="modal" data-project="Projeto 01">
                 <div class="info">
                     <img class="semaforo-image" src="img/img01-SemaforoArduino.jpg" alt="foto1">
                     <p class="title">Projeto 01</p>
@@ -96,10 +41,9 @@
                 </div>
             </div>
 
-            <!-- Repita o bloco de card quantas vezes precisar -->
-            <div data-bs-toggle="modal" data-bs-target="#exampleModal2"  class="card">
+            <div class="card" data-bs-toggle="modal" data-project="Projeto 02">
                 <div class="info">
-                    <img class="semaforo-image" src="img/img01-SemaforoArduino.jpg" alt="foto2">
+                    <img class="semaforo-image" src="img/img02-PotenciometroArduino.jpg" alt="foto2">
                     <p class="title">Projeto 02</p>
                     <p class="description">Neste projeto realizamos led controlado por um potenciômetro</p>
                     <div class="button-readMore">
@@ -110,6 +54,7 @@
         </div>
     </section>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
