@@ -6,7 +6,7 @@ const projetos = [
       imgSrc: 'img/img01-SemaforoArduino.jpg',
       relatorio: {
           disciplina: 'Sistemas de Computação e de Informação',
-          participantes: 'Arthur Vinicius Sena Campos - S.I - 4° Semestre. Gabriel Marcos Ferreira da Silva - S.I - 4° Semestre. Felipe Oliveira Carvalho - S.I - 4° Semestre. Juan Pablo Souza Chagas - S.I - 4° Semestre. Felipe Henrique dos Reis Martins - S.I - 4° Semestre. Hugo Mesquita Nunes - S.I - 4° Semestre. Danilo Claudino Carvalho - S.I - 4° Semestre ',
+          participantes: 'Arthur Vinicius Sena Campos, Gabriel Marcos Ferreira da Silva, Felipe Oliveira Carvalho, Juan Pablo Souza Chagas, Felipe Henrique dos Reis Martins, Hugo Mesquita Nunes, Danilo Claudino Carvalho',
           laboratorio: 'Sala C32',
           dia: '21-08-2024',
           introducao: 'Primeiro começamos fazendo testes no  Tinkercad web, que é um simulador, para evitar problemas na montagem física. ',
@@ -29,7 +29,7 @@ const projetos = [
     imgSrc: 'img/img02-PotenciometroArduino.jpg',
     relatorio: {
         disciplina: 'Sistemas de Computação e de Informação',
-        participantes: 'Arthur Vinicius Sena Campos - S.I - 4° Semestre. Gabriel Marcos Ferreira da Silva - S.I - 4° Semestre. Felipe Oliveira Carvalho - S.I - 4° Semestre. Juan Pablo Souza Chagas - S.I - 4° Semestre. Felipe Henrique dos Reis Martins - S.I - 4° Semestre. Hugo Mesquita Nunes - S.I - 4° Semestre. Danilo Claudino Carvalho - S.I - 4° Semestre',
+        participantes: 'Arthur Vinicius Sena Campos, Gabriel Marcos Ferreira da Silva, Felipe Oliveira Carvalho, Juan Pablo Souza Chagas, Felipe Henrique dos Reis Martins, Hugo Mesquita Nunes, Danilo Claudino Carvalho',
         laboratorio: 'Sala C32',
         dia: '28-08-2024',
         introducao: 'Iniciamos o projeto utilizando o Tinkercad, uma ferramenta de simulação online que permite criar e testar circuitos eletrônicos virtualmente. Essa etapa foi crucial para identificar possíveis problemas antes de construir o circuito físico.',
@@ -47,47 +47,140 @@ const projetos = [
 
 
 {
-  id: 'exampleModal3',
-  titulo: 'Projeto 03',
-  descricao: 'Neste projeto utilizamos um sensor de movimento e LED controlados por Arduino',
-  imgSrc: 'img/img03-SensorMovimentoArduino.jpg',
+  id: "exampleModal3",
+  titulo: "Projeto 03",
+  descricao: "Neste projeto utilizamos um LED RGB controlado por três potenciômetros através de um Arduino",
+  imgSrc: "img/Projeto3Tinkercad.jpg",
   relatorio: {
-      disciplina: 'Sistemas de Computação e de Informação',
-      participantes: 'Felipe Oliveira Carvalho - S.I - 4° Semestre. Danilo Claudino Carvalho - S.I - 4° Semestre. Juan Pablo Souza Chagas - S.I - 4° Semestre. Felipe Henrique dos Reis Martins - S.I - 4° Semestre. Hugo Mesquita Nunes - S.I - 4° Semestre. Arthur Vinicius Sena Campos - S.I - 4° Semestre. Gabriel Marcos Ferreira da Silva - S.I - 4° Semestre.',
-      laboratorio: 'Sala C32',
-      dia: '04/09/2024',
-      introducao: 'Iniciamos o experimento por meio do simulador Tinkercad, testando o circuito virtualmente e elaborando o código em conjunto com o grupo, sendo crucial para identificar falhas antes de montar o circuito físico.',
-      objetivos: '⦁ Validar o circuito utilizando o simulador Tinkercad. ⦁ Configurar a IDE Arduino para desenvolver o código fonte. ⦁ Montar o circuito físico conforme o design testado no simulador. ⦁ Testar e ajustar o circuito físico para garantir seu funcionamento correto.',
-      materiais: '⦁ Simulador Tinkercad. ⦁ Placa Arduino UNO R3. ⦁ Protoboard. ⦁ 1 Sensor de movimento HC-SR04. ⦁ 1 Led Vermelho. ⦁ 1 Resistor de 220 Ω. ⦁ 7 Fios de conexão. ⦁ Cabo USB AB. ⦁ Notebook.',
-      diagrama: 'img/DiagramaModal3.jpg',
-      codigo: 'img/CodigoModal3.jpg',
-      procedimentos: '⦁ Realização de Testes no Tinkercad com materiais virtuais. ⦁ Desenvolvimento do código. ⦁ Montagem do circuito físico conforme o modelo do simulador. ⦁ Transferência do código do Tinkercad para a IDE Arduino. ⦁ Conexão do notebook com os códigos para a placa Arduino UNO.',
-      resultados: 'Sucesso, tanto a codificação quanto às ligações funcionaram conforme o planejado.',
-      discussao: 'Houve alguns problemas na parte de calcular a distância correta para o sensor de movimento, mas o Tinkercad ajudou a resolvê-los, evitando problemas na montagem física.',
-      conclusao: 'Foi interessante ver como o sensor ultrassônico capta objetos e calcula a distância, sendo um projeto bem sucedido tanto na simulação quanto na montagem física.',
-      referencias: '⦁ Tinkercad: https://tinkercad.com ⦁ IDE Arduino.'
+    disciplina: "Sistemas de Computação e de Informação",
+    participantes: "Arthur Vinicius Sena Campos, Gabriel Marcos Ferreira da Silva, Felipe Oliveira Carvalho, Juan Pablo Souza Chagas, Felipe Henrique dos Reis Martins, Hugo Mesquita Nunes, Danilo Claudino Carvalho",
+    laboratorio: "Sala C32",
+    dia: "18/10/2024",
+    introducao: "Fizemos testes no Tinkercad para validar o controle do LED RGB com três potenciômetros antes de montar o circuito físico.",
+    objetivos: "⦁ Testar o controle de cores do LED RGB através de três potenciômetros no Tinkercad. ⦁ Baixar e configurar a IDE do Arduino. ⦁ Desenvolver o código para ler os valores dos potenciômetros e ajustar o LED RGB. ⦁ Montar o circuito físico conforme o modelo do simulador.",
+    materiais: "⦁ protoboard. ⦁ Fios Jumper. ⦁ Três Potenciômetros. ⦁ Arduino. ⦁ LED RGB.",
+    diagrama: "Aqui vai o diagrama do circuito com o LED RGB e três potenciômetros...",
+    codigo: "img/Projeto03Codigo.jpg",
+    procedimentos: "⦁ Realização de testes no Tinkercad para validar o controle do LED RGB. ⦁ Desenvolvimento do código, definindo as portas para o LED RGB e leitura dos potenciômetros. ⦁ Montagem do circuito físico conforme o modelo do simulador. ⦁ Transferência do código do notebook para a placa Arduino.",
+    resultados: "O controle do LED RGB com os três potenciômetros funcionou como esperado. Conseguimos ajustar as cores do LED sem problemas.",
+    discussao: "O uso do Tinkercad foi útil para simular o projeto e evitar erros na montagem física. A combinação dos potenciômetros para controle do LED RGB permitiu uma experimentação prática interessante.",
+    conclusao: "O projeto foi concluído com sucesso. O Tinkercad facilitou a simulação do controle de cores com os potenciômetros, garantindo a funcionalidade correta do circuito na montagem física.",
+    referencias: "⦁ Tinkercad: https://www.tinkercad.com/"
   }
 },
+
 {
-  id: 'exampleModal4',
-  titulo: 'Projeto 04',
-  descricao: 'Neste projeto utilizamos um sensor ultrassônico e um LED RGB controlados por Arduino',
-  imgSrc: 'img/img04-SensorUltrassonicoArduino.jpg',
+  id: "exampleModal4",
+  titulo: "Projeto 04",
+  descricao: "Neste projeto utilizamos um LED RGB controlado por três potenciômetros através de um Arduino",
+  imgSrc: "img/Projeto3Tinkercad.jpg",
   relatorio: {
-      disciplina: 'Sistemas de Computação e de Informação',
-      participantes: 'Arthur Vinicius Sena Campos - S.I - 4° Semestre. Gabriel Marcos Ferreira da Silva - S.I - 4° Semestre. Felipe Oliveira Carvalho - S.I - 4° Semestre. Juan Pablo Souza Chagas - S.I - 4° Semestre. Felipe Henrique dos Reis Martins - S.I - 4° Semestre. Hugo Mesquita Nunes - S.I - 4° Semestre. Danilo Claudino Carvalho - S.I - 4° Semestre.',
-      laboratorio: 'Sala C32',
-      dia: '18/10/2024',
-      introducao: 'Fizemos testes no Tinkercad, que é um simulador, para evitar problemas na montagem física.',
-      objetivos: '⦁ Realizar testes no simulador Tinkercad. ⦁ Baixar e configurar a IDE do Arduino. ⦁ Desenvolver e testar o código para o projeto. ⦁ Montar o circuito físico conforme o modelo do simulador.',
-      materiais: '⦁ Breadboard. ⦁ Fios Jumper. ⦁ Potenciômetros. ⦁ Arduino. ⦁ LEDs.',
-      diagrama: 'Aqui vai o diagrama do circuito...',
-      codigo: '',
-      procedimentos: '⦁ Realização de testes no Tinkercad web. ⦁ Desenvolvimento do código, definindo as portas para a luz do LED. ⦁ Montagem do circuito físico conforme o modelo do simulador. ⦁ Transferência do código do notebook para a placa Arduino.',
-      resultados: 'Tivemos um pequeno problema com a falta de fios, mas resolvemos rapidamente. No geral, o projeto seguiu conforme o planejado e funcionou perfeitamente.',
-      discussao: 'A utilização do Tinkercad foi essencial para evitar problemas na montagem física. A falta de fios atrasou o progresso, mas o projeto foi um sucesso.',
-      conclusao: 'O projeto foi concluído com sucesso, tanto na codificação quanto na montagem física. O Tinkercad foi fundamental para o êxito do projeto.',
-      referencias: '⦁ Tinkercad: https://www.tinkercad.com/'
+    disciplina: "Sistemas de Computação e de Informação",
+    participantes: "Arthur Vinicius Sena Campos, Gabriel Marcos Ferreira da Silva, Felipe Oliveira Carvalho, Juan Pablo Souza Chagas, Felipe Henrique dos Reis Martins, Hugo Mesquita Nunes, Danilo Claudino Carvalho",
+    laboratorio: "Sala C32",
+    dia: "18/10/2024",
+    introducao: "Fizemos testes no Tinkercad para validar o controle do LED RGB com três potenciômetros antes de montar o circuito físico.",
+    objetivos: "⦁ Testar o controle de cores do LED RGB através de três potenciômetros no Tinkercad. ⦁ Baixar e configurar a IDE do Arduino. ⦁ Desenvolver o código para ler os valores dos potenciômetros e ajustar o LED RGB. ⦁ Montar o circuito físico conforme o modelo do simulador.",
+    materiais: "⦁ protoboard. ⦁ Fios Jumper. ⦁ Três Potenciômetros. ⦁ Arduino. ⦁ LED RGB.",
+    diagrama: "Aqui vai o diagrama do circuito com o LED RGB e três potenciômetros...",
+    codigo: "img/Projeto03Codigo.jpg",
+    procedimentos: "⦁ Realização de testes no Tinkercad para validar o controle do LED RGB. ⦁ Desenvolvimento do código, definindo as portas para o LED RGB e leitura dos potenciômetros. ⦁ Montagem do circuito físico conforme o modelo do simulador. ⦁ Transferência do código do notebook para a placa Arduino.",
+    resultados: "O controle do LED RGB com os três potenciômetros funcionou como esperado. Conseguimos ajustar as cores do LED sem problemas.",
+    discussao: "O uso do Tinkercad foi útil para simular o projeto e evitar erros na montagem física. A combinação dos potenciômetros para controle do LED RGB permitiu uma experimentação prática interessante.",
+    conclusao: "O projeto foi concluído com sucesso. O Tinkercad facilitou a simulação do controle de cores com os potenciômetros, garantindo a funcionalidade correta do circuito na montagem física.",
+    referencias: "⦁ Tinkercad: https://www.tinkercad.com/"
+  }
+},
+
+{
+  id: 'exampleModal5',
+  titulo: 'Projeto 05',
+  descricao: "Neste experimento, utilizamos um push button para controlar um LED através de um Arduino UNO.",
+  imgSrc: "img/Projeto4Tinkercad.jpg",
+  relatorio: {
+    disciplina: "Sistemas de Computação e de Informação",
+    participantes: "Felipe Oliveira Carvalho, Danilo Claudino Carvalho, Juan Pablo Souza Chagas, Felipe Henrique dos Reis Martins, Hugo Mesquita Nunes, Arthur Vinicius Sena Campos, Gabriel Marcos Ferreira da Silva",
+    laboratorio: "Sala C32",
+    dia: "09/11/2024",
+    introducao: "Neste experimento, o objetivo foi utilizar um botão de pressão (push button) em conjunto com a placa Arduino UNO para acionar um dispositivo de saída, como um LED, mediante a interação do usuário. O experimento foi desenvolvido em duas etapas: inicialmente, utilizando o simulador Tinkercad para testar o circuito virtual e o código, e, em seguida, montando o circuito fisicamente para validar os resultados obtidos. O uso do simulador permitiu identificar falhas no código e otimizar a montagem do circuito real, facilitando o processo de implementação.",
+    objetivos: "● Validar o funcionamento do push button com o Arduino utilizando o simulador Tinkercad. ● Desenvolver e ajustar o código na IDE do Arduino para controlar um LED com base na interação do usuário. ● Montar o circuito físico com a placa Arduino UNO e testar o funcionamento real do sistema.",
+    materiais: "● Simulador Tinkercad ● Placa Arduino UNO R3 ● Protoboard ● Push Button (Botão de pressão) ● LED ● Resistor de 220 Ω ● Fios de conexão ● Cabo USB AB ● Notebook",
+    diagrama: "O circuito consiste em um push button conectado a um pino digital do Arduino (pino 2) e um LED conectado a outro pino digital (pino 13) através de um resistor de 220 Ω. ● O push button foi conectado entre o pino 2 do Arduino e o GND (terra), com uma configuração de pull-down interno para evitar leituras indesejadas. ● O LED foi conectado ao pino 13 do Arduino, com o resistor em série para limitar a corrente.",
+    codigo: "img/Projeto04Codigo.jpg",
+    procedimentos: "1. Simulação no Tinkercad: ○ Criamos o circuito virtual utilizando o simulador Tinkercad. ○ Conectamos o push button e o LED ao Arduino e verificamos se o código estava funcionando corretamente. 2. Desenvolvimento do Código: ○ Escrevemos o código na IDE do Arduino para controlar o LED com o botão. ○ Testamos o código no simulador e ajustamos conforme necessário. 3. Montagem do Circuito Físico: ○ Com o circuito validado no simulador, montamos o circuito físico em uma protoboard. ○ Conectamos o push button ao pino 2 do Arduino e o LED ao pino 13. 4. Transferência do Código para a IDE Arduino: ○ O código foi transferido para a IDE Arduino e o upload foi feito para a placa física. ○ Realizamos os testes finais e verificamos o funcionamento correto do sistema.",
+    resultados: "O circuito físico funcionou conforme o esperado. Ao pressionar o botão, o LED acendeu, e ao soltar, o LED apagou. O sistema foi validado tanto no ambiente virtual quanto físico, com o código funcionando corretamente em ambas as plataformas.",
+    discussao: "O uso do simulador Tinkercad foi essencial para verificar o comportamento do circuito antes da montagem física. Com ele, foi possível testar o código e identificar erros na configuração do botão e do LED sem a necessidade de montagens físicas complexas. Durante a implementação física, houve a necessidade de um pequeno ajuste no código para tratar a leitura do botão (debouncing), o que foi facilmente resolvido com o delay de 100 ms.",
+    conclusao: "Este experimento demonstrou a importância da simulação no processo de desenvolvimento de circuitos eletrônicos e programação com Arduino. A interação com o push button foi perfeitamente validada, e o controle do LED foi bem-sucedido. O uso do simulador Tinkercad facilitou a identificação de falhas e a otimização do código, enquanto a montagem física confirmou a funcionalidade do sistema, proporcionando uma experiência prática valiosa.",
+    referencias: "● Tinkercad: https://tinkercad.com ● IDE Arduino: https://www.arduino.cc"
+  }
+},
+
+{
+  id: 'exampleModal6',
+  titulo: 'Projeto 06',
+  descricao: "Neste experimento, utilizamos um push button para controlar um LED através de um Arduino UNO.",
+  imgSrc: "img/Projeto4Tinkercad.jpg",
+  relatorio: {
+    disciplina: "Sistemas de Computação e de Informação",
+    participantes: "Felipe Oliveira Carvalho, Danilo Claudino Carvalho, Juan Pablo Souza Chagas, Felipe Henrique dos Reis Martins, Hugo Mesquita Nunes, Arthur Vinicius Sena Campos, Gabriel Marcos Ferreira da Silva",
+    laboratorio: "Sala C32",
+    dia: "09/11/2024",
+    introducao: "Neste experimento, o objetivo foi utilizar um botão de pressão (push button) em conjunto com a placa Arduino UNO para acionar um dispositivo de saída, como um LED, mediante a interação do usuário. O experimento foi desenvolvido em duas etapas: inicialmente, utilizando o simulador Tinkercad para testar o circuito virtual e o código, e, em seguida, montando o circuito fisicamente para validar os resultados obtidos. O uso do simulador permitiu identificar falhas no código e otimizar a montagem do circuito real, facilitando o processo de implementação.",
+    objetivos: "● Validar o funcionamento do push button com o Arduino utilizando o simulador Tinkercad. ● Desenvolver e ajustar o código na IDE do Arduino para controlar um LED com base na interação do usuário. ● Montar o circuito físico com a placa Arduino UNO e testar o funcionamento real do sistema.",
+    materiais: "● Simulador Tinkercad ● Placa Arduino UNO R3 ● Protoboard ● Push Button (Botão de pressão) ● LED ● Resistor de 220 Ω ● Fios de conexão ● Cabo USB AB ● Notebook",
+    diagrama: "O circuito consiste em um push button conectado a um pino digital do Arduino (pino 2) e um LED conectado a outro pino digital (pino 13) através de um resistor de 220 Ω. ● O push button foi conectado entre o pino 2 do Arduino e o GND (terra), com uma configuração de pull-down interno para evitar leituras indesejadas. ● O LED foi conectado ao pino 13 do Arduino, com o resistor em série para limitar a corrente.",
+    codigo: "img/Projeto04Codigo.jpg",
+    procedimentos: "1. Simulação no Tinkercad: ○ Criamos o circuito virtual utilizando o simulador Tinkercad. ○ Conectamos o push button e o LED ao Arduino e verificamos se o código estava funcionando corretamente. 2. Desenvolvimento do Código: ○ Escrevemos o código na IDE do Arduino para controlar o LED com o botão. ○ Testamos o código no simulador e ajustamos conforme necessário. 3. Montagem do Circuito Físico: ○ Com o circuito validado no simulador, montamos o circuito físico em uma protoboard. ○ Conectamos o push button ao pino 2 do Arduino e o LED ao pino 13. 4. Transferência do Código para a IDE Arduino: ○ O código foi transferido para a IDE Arduino e o upload foi feito para a placa física. ○ Realizamos os testes finais e verificamos o funcionamento correto do sistema.",
+    resultados: "O circuito físico funcionou conforme o esperado. Ao pressionar o botão, o LED acendeu, e ao soltar, o LED apagou. O sistema foi validado tanto no ambiente virtual quanto físico, com o código funcionando corretamente em ambas as plataformas.",
+    discussao: "O uso do simulador Tinkercad foi essencial para verificar o comportamento do circuito antes da montagem física. Com ele, foi possível testar o código e identificar erros na configuração do botão e do LED sem a necessidade de montagens físicas complexas. Durante a implementação física, houve a necessidade de um pequeno ajuste no código para tratar a leitura do botão (debouncing), o que foi facilmente resolvido com o delay de 100 ms.",
+    conclusao: "Este experimento demonstrou a importância da simulação no processo de desenvolvimento de circuitos eletrônicos e programação com Arduino. A interação com o push button foi perfeitamente validada, e o controle do LED foi bem-sucedido. O uso do simulador Tinkercad facilitou a identificação de falhas e a otimização do código, enquanto a montagem física confirmou a funcionalidade do sistema, proporcionando uma experiência prática valiosa.",
+    referencias: "● Tinkercad: https://tinkercad.com ● IDE Arduino: https://www.arduino.cc"
+  }
+},
+
+{
+  id: 'exampleModal7',
+  titulo: 'Projeto 07',
+  descricao: "Neste experimento, utilizamos um sensor ultrassônico para medir distâncias e controlar um micro servo motor com Arduino.",
+  imgSrc: "img/Projeto5Tinkercad.jpg",
+  relatorio: {
+    disciplina: "Sistemas de Computação e de Informação",
+    participantes: "Felipe Oliveira Carvalho, Danilo Claudino Carvalho, Juan Pablo Souza Chagas, Felipe Henrique dos Reis Martins, Hugo Mesquita Nunes, Arthur Vinicius Sena Campos, Gabriel Marcos Ferreira da Silva",
+    laboratorio: "Sala C32",
+    dia: "09/11/2024",
+    introducao: "O experimento realizado teve como objetivo controlar um micro servo motor utilizando um sensor ultrassônico para medir distâncias. O sensor ultrassônico é um dispositivo que usa ondas sonoras para medir a distância de objetos ao seu redor. O valor da distância captada pelo sensor foi utilizado para controlar o ângulo de rotação de um micro servo motor, criando uma aplicação prática de automação. O experimento foi realizado em duas etapas: primeiro, foi simulado o circuito no Tinkercad e, em seguida, o circuito foi montado fisicamente com a placa Arduino UNO.",
+    objetivos: "● Validar o funcionamento do sensor ultrassônico no controle do servo motor. ● Desenvolver e ajustar o código na IDE do Arduino para ler as distâncias do sensor ultrassônico e controlar o servo motor com base nesses valores. ● Montar o circuito físico e testar o funcionamento do sistema.",
+    materiais: "● Simulador Tinkercad ● Placa Arduino UNO R3 ● Protoboard ● Sensor Ultrassônico HC-SR04 ● Micro Servo Motor (como o SG90) ● Fios de conexão ● Cabo USB AB ● Notebook",
+    diagrama: "O circuito consiste nos seguintes componentes: ● O sensor ultrassônico HC-SR04 foi conectado à placa Arduino, com o pino Trigger no pino 9 e o pino Echo no pino 10. ● O micro servo motor foi conectado ao pino 6 da placa Arduino. ● O sensor HC-SR04 é alimentado pelos pinos VCC e GND da placa Arduino.",
+    codigo: "img/Projeto05Codigo.jpg",
+    procedimentos: "1. Simulação no Tinkercad: ○ Criamos o circuito virtual utilizando o simulador Tinkercad. Conectamos o sensor ultrassônico HC-SR04 e o micro servo motor à placa Arduino e testamos o código no ambiente simulado. 2. Desenvolvimento do Código: ○ O código foi escrito na IDE do Arduino para controlar o servo motor com base na distância medida pelo sensor ultrassônico. ○ A leitura do sensor foi feita utilizando a função pulseIn, e a distância foi convertida em um valor de ângulo para o servo motor com a função map. 3. Montagem do Circuito Físico: ○ Após validar o circuito e o código no simulador, o circuito foi montado fisicamente em uma protoboard. ○ O sensor ultrassônico e o servo motor foram conectados à placa Arduino UNO. 4. Transferência do Código para a IDE Arduino: ○ O código foi transferido para a IDE Arduino e feito o upload para a placa física. ○ Após o upload, o funcionamento foi testado no ambiente real.",
+    resultados: "O sistema funcionou conforme o esperado. O sensor ultrassônico mediu corretamente as distâncias e, com base nesses valores, o micro servo motor foi movido para o ângulo correspondente. O monitor serial exibiu as distâncias em centímetros, e o servo se movimentou de acordo com a leitura do sensor, demonstrando que o sistema estava operando de forma precisa.",
+    discussao: "Durante o experimento, observamos que a precisão do sensor ultrassônico depende da superfície do objeto em frente a ele, sendo mais eficaz para superfícies planas e sólidas. O código foi ajustado para garantir que a distância fosse mapeada corretamente para os ângulos do servo motor. O sistema demonstrou uma resposta satisfatória e rápida às mudanças de distância. Uma questão relevante foi o comportamento do servo motor para distâncias extremas (muito próximas ou muito distantes). O mapeamento da distância para o ângulo do servo foi feito dentro de um intervalo seguro (0 a 180 graus), mas distâncias superiores a 100 cm resultaram em ângulos muito próximos de 180 graus, o que pode gerar movimentos indesejados.",
+    conclusao: "O experimento foi bem-sucedido, mostrando como utilizar um sensor ultrassônico para controlar a posição de um micro servo motor de forma automatizada. O sistema é eficaz para medir distâncias e realizar ajustes no servo motor em tempo real, sendo útil para aplicações como robôs e sistemas de automação. A validação tanto no simulador quanto no ambiente físico mostrou a eficácia da solução proposta.",
+    referencias: "● Tinkercad: https://tinkercad.com ● IDE Arduino: https://www.arduino.cc ● Sensor Ultrassônico HC-SR04: Documentação do HC-SR04"
+  }
+},
+
+{
+  id: 'exampleModal8',
+  titulo: 'Projeto 08',
+  descricao: "Neste experimento, utilizamos dois potenciômetros para controlar dois micro servo motores com Arduino.",
+  imgSrc: "img/Projeto5Tinkercad.jpg",
+  relatorio: {
+    disciplina: "Sistemas de Computação e de Informação",
+    participantes: "Felipe Oliveira Carvalho, Danilo Claudino Carvalho, Juan Pablo Souza Chagas, Felipe Henrique dos Reis Martins, Hugo Mesquita Nunes, Arthur Vinicius Sena Campos, Gabriel Marcos Ferreira da Silva",
+    laboratorio: "Sala C32",
+    dia: "09/11/2024",
+    introducao: "Neste experimento, foi explorado o controle de dois micro servo motores utilizando dois potenciômetros. O potenciômetro, um dispositivo variável de resistência, foi usado para ajustar os ângulos de dois servos de forma independente. Cada potenciômetro altera a posição de um servo motor, demonstrando a interação analógica entre o Arduino e os componentes físicos. O experimento foi realizado em duas etapas: primeiro, com a simulação do circuito no Tinkercad e, em seguida, a montagem física do circuito com a placa Arduino UNO.",
+    objetivos: "● Controlar dois micro servo motores usando dois potenciômetros. ● Desenvolver e ajustar o código para ler os valores dos potenciômetros e mapear esses valores para os ângulos dos servos. ● Montar o circuito físico e testar o funcionamento do sistema.",
+    materiais: "● Simulador Tinkercad ● Placa Arduino UNO R3 ● Protoboard ● 2 Potenciômetros ● 2 Micro Servo Motores (como SG90) ● Fios de conexão ● Cabo USB AB ● Notebook",
+    diagrama: "O circuito consiste nos seguintes componentes: ● Os dois potenciômetros foram conectados aos pinos analógicos A0 e A1 da placa Arduino. ● Cada micro servo motor foi conectado a um pino digital do Arduino: o primeiro servo ao pino 9 e o segundo servo ao pino 10. ● Os potenciômetros têm um terminal conectado ao VCC (5V), outro ao GND e o terminal central (wiper) aos pinos analógicos do Arduino.",
+    codigo: "img/Projeto05Codigo.jpg",
+    procedimentos: "1. Simulação no Tinkercad: ○ Criamos o circuito virtual utilizando o simulador Tinkercad. Conectamos os potenciômetros e os servos à placa Arduino e testamos o código no ambiente simulado. 2. Desenvolvimento do Código: ○ O código foi escrito na IDE do Arduino para controlar os servos com base nas leituras dos potenciômetros. ○ As leituras dos potenciômetros foram feitas utilizando a função analogRead e os valores foram mapeados para ângulos usando a função map. 3. Montagem do Circuito Físico: ○ Após validar o circuito e o código no simulador, o circuito foi montado fisicamente em uma protoboard. 4. Transferência do Código para a IDE Arduino: ○ O código foi transferido para a IDE Arduino e feito o upload para a placa física. Após o upload, o funcionamento foi testado no ambiente real.",
+    resultados: "O sistema funcionou conforme o esperado. Os potenciômetros foram lidos corretamente e, com base nesses valores, os servos foram movidos para os ângulos correspondentes. O sistema mostrou boa resposta aos ajustes realizados nos potenciômetros, controlando os servos de forma eficiente e precisa.",
+    discussao: "Durante o experimento, observamos que a precisão do controle do servo estava diretamente relacionada à estabilidade das leituras dos potenciômetros. O código foi ajustado para garantir que as leituras fossem mapeadas corretamente para os ângulos dos servos. No entanto, notamos que o comportamento do sistema poderia ser melhorado com a implementação de filtros para evitar flutuações indesejadas nas leituras dos potenciômetros.",
+    conclusao: "O experimento foi bem-sucedido, demonstrando como utilizar potenciômetros para controlar a posição de micro servo motores de forma precisa. O sistema é eficaz para aplicações de controle simples e pode ser expandido para sistemas mais complexos, como robótica e automação. A validação tanto no simulador quanto no ambiente físico mostrou a eficácia da solução proposta.",
+    referencias: "● Tinkercad: https://tinkercad.com ● IDE Arduino: https://www.arduino.cc"
   }
 }
 

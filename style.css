@@ -199,6 +199,12 @@ header .navigation a:hover {
     background-color: #0056b3;
 }
 
+.text-section h1 {
+    font-weight: bold;
+    font-size: 2em; /* Aumenta o tamanho da fonte */
+    letter-spacing: 2px;
+}
+
 /* Seções de texto */
 .text-section {
     display: flex;
@@ -206,9 +212,9 @@ header .navigation a:hover {
     align-items: center;
     padding: 50px;
     color: #000;
-    font-weight: 800;
+    font-weight: 700; /* Aumenta o peso da fonte */
+    letter-spacing: 1px;
     text-align: center;
-    font-family: "Poppins", sans-serif;
 }
 
 .tituloProjeto {
