@@ -60,7 +60,7 @@ const projetos = [
     objetivos: "⦁ Controlar um LED RGB através do Arduino. ⦁ Simular o funcionamento do LED RGB no Tinkercad para validar o código e o circuito. ⦁ Experimentar combinações de cores e intensidades no LED RGB.",
     materiais: "⦁ Protoboard. ⦁ Fios Jumper. ⦁ Arduino Uno. ⦁ LED RGB.",
     diagrama: "img/DiagramaModal3.jpg",
-    codigo: "img/Projeto03Codigo.jpg",
+    codigo: "img/CodigoModal3.jpg",
     procedimentos: "⦁ Simulação do LED RGB no Tinkercad para testar o controle de cores com o Arduino. ⦁ Programação do Arduino para ajustar as intensidades de vermelho, verde e azul do LED RGB. ⦁ Montagem do circuito físico conforme o modelo da simulação.",
     resultados: "O controle de cores do LED RGB funcionou conforme esperado, com as intensidades de cada cor ajustadas diretamente pelo código Arduino.",
     discussao: "A simulação no Tinkercad foi essencial para verificar o comportamento do LED RGB antes da montagem física. O LED RGB permitiu uma compreensão prática da combinação de cores, proporcionando uma experiência enriquecedora de aprendizado.",
