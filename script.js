@@ -18,7 +18,7 @@ const projetos = [
           resultados: 'O único problema encontrado foi que o LED verde do kit estava queimado. Testamos com os outros resistores e ligações diferentes, mas o LED realmente estava queimado.No geral, tanto a codificação quanto as ligações funcionaram conforme o esperado. ',
           discussao: 'A utilização do simulador Tinkercad foi essencial para evitar problemas na montagem física. A necessidade de baixar um driver específico para a placa chinesa foi um desafio, mas foi superado com sucesso. A identificação de um LED queimado foi o único contratempo, mas não comprometeu o sucesso geral do projeto. ',
           conclusao: 'O projeto foi realizado com sucesso, tanto na parte de codificação quanto na montagem física. O uso do simulador Tinkercad e a resolução de problemas com drivers específicos foram pontos chave para o sucesso do projeto. ',
-          referencias: 'Tinkercad:  https: HYPERLINK "https://www.tinkercad.com/" HYPERLINK "https://www.tinkercad.com/" HYPERLINK "https://www.tinkercad.com/"//www.tinkercad.com/'
+          referencias: 'https://www.tinkercad.com/'
       }
   },
 
@@ -241,7 +241,7 @@ function criarModais() {
               <p><strong>RESULTADOS:</strong> ${projeto.relatorio.resultados}</p>
               <p><strong>DISCUSSÃO:</strong> ${projeto.relatorio.discussao}</p>
               <p><strong>CONCLUSÃO:</strong> ${projeto.relatorio.conclusao}</p>
-              <p><strong>REFERÊNCIAS:</strong> ${projeto.relatorio.referencias}</p>
+              <p><strong>REFERÊNCIAS:</strong> <a href="${projeto.relatorio.referencias}" target="_blank" style="color: inherit;">${projeto.relatorio.referencias}</a></p>
               <img src="${projeto.imgSrc}" alt="" style="width: 470px; height: 300px; border-radius: 5px;" />
             </div>
             <div class="modal-footer">
