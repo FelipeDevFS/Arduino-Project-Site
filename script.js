@@ -11,7 +11,7 @@ const projetos = [
           dia: '04/09/2024',
           introducao: 'Primeiro começamos fazendo testes no  Tinkercad web, que é um simulador, para evitar problemas na montagem física. ',
           objetivos: '> Realizar testes no simulador Tinkercad. > Baixar e configurar a IDE do arduino. > Desenvolver e testar o código para o projeto. > Montar o circuito físico conforme o modelo do simulador. ',
-          materiais: '> Simulador Tinkercad. > IDE do arduino. > Placa arduino de origem chinesa.  > Driver específico para a placa.  > Notebook. > LEDs.  >Resistores. ',
+          materiais: '> Simulador Tinkercad. > IDE do arduino. > Placa arduino de origem chinesa.  > Driver específico para a placa.  > Notebook. > LEDs.  > Resistores. ',
           diagrama: 'img/DiagramaModal1.jpg',
           codigo: 'img/CodigoModal1.jpg',
           procedimentos: '> Realização de testes no Tinkercad web. > Download e instalação da IDE do arduino. > Desenvolvimento do código, definindo as portas para as luzes de LED. > Download do driver específico para a placa chinesa. > Montagem do circuito físico conforme o modelo do simulador. > Transferência do código do notebook para a placa arduino. ',
@@ -41,7 +41,7 @@ const projetos = [
         resultados: 'No geral, tanto a codificação quanto as ligações funcionaram conforme o esperado.',
         discussao: 'A utilização do simulador Tinkercad foi essencial para evitar problemas na montagem física. O projeto, em si, foi um sucesso.',
         conclusao: 'O projeto foi realizado com sucesso, tanto na parte de codificação quanto na montagem física. O Tinkercad foi a peça chave para o sucesso do projeto.',
-        referencias: '> Tinkercad: https://www.tinkercad.com/'
+        referencias: 'https://www.tinkercad.com/'
     }
 },
 
@@ -65,7 +65,7 @@ const projetos = [
     resultados: "O controle de cores do LED RGB funcionou conforme esperado, com as intensidades de cada cor ajustadas diretamente pelo código Arduino.",
     discussao: "A simulação no Tinkercad foi essencial para verificar o comportamento do LED RGB antes da montagem física. O LED RGB permitiu uma compreensão prática da combinação de cores, proporcionando uma experiência enriquecedora de aprendizado.",
     conclusao: "O projeto foi concluído com sucesso, e o LED RGB demonstrou ser uma ferramenta eficaz para o controle de cores e intensidades com o Arduino.",
-    referencias: "⦁ Tinkercad: https://www.tinkercad.com/"
+    referencias: "https://www.tinkercad.com/"
   }
 },
 
@@ -73,7 +73,7 @@ const projetos = [
   id: "exampleModal4",
   titulo: "Projeto 04",
   descricao: "Neste projeto utilizamos um LED RGB controlado por três potenciômetros através de um Arduino",
-  imgSrc: "img/Projeto3Tinkercad.jpg",
+  imgSrc: "img/Projeto4Tinkercad.jpg",
   relatorio: {
     disciplina: "Sistemas de Computação e de Informação",
     participantes: "Arthur Vinicius Sena Campos, Gabriel Marcos Ferreira da Silva, Felipe Oliveira Carvalho, Juan Pablo Souza Chagas, Felipe Henrique dos Reis Martins, Hugo Mesquita Nunes, Danilo Claudino Carvalho",
@@ -83,12 +83,12 @@ const projetos = [
     objetivos: "⦁ Testar o controle de cores do LED RGB através de três potenciômetros no Tinkercad. ⦁ Baixar e configurar a IDE do Arduino. ⦁ Desenvolver o código para ler os valores dos potenciômetros e ajustar o LED RGB. ⦁ Montar o circuito físico conforme o modelo do simulador.",
     materiais: "⦁ protoboard. ⦁ Fios Jumper. ⦁ Três Potenciômetros. ⦁ Arduino. ⦁ LED RGB.",
     diagrama: "img/DiagramaModal4.jpg",
-    codigo: "img/Projeto03Codigo.jpg",
+    codigo: "img/CodigoModal4.jpg",
     procedimentos: "⦁ Realização de testes no Tinkercad para validar o controle do LED RGB. ⦁ Desenvolvimento do código, definindo as portas para o LED RGB e leitura dos potenciômetros. ⦁ Montagem do circuito físico conforme o modelo do simulador. ⦁ Transferência do código do notebook para a placa Arduino.",
     resultados: "O controle do LED RGB com os três potenciômetros funcionou como esperado. Conseguimos ajustar as cores do LED sem problemas.",
     discussao: "O uso do Tinkercad foi útil para simular o projeto e evitar erros na montagem física. A combinação dos potenciômetros para controle do LED RGB permitiu uma experimentação prática interessante.",
     conclusao: "O projeto foi concluído com sucesso. O Tinkercad facilitou a simulação do controle de cores com os potenciômetros, garantindo a funcionalidade correta do circuito na montagem física.",
-    referencias: "⦁ Tinkercad: https://www.tinkercad.com/"
+    referencias: "https://www.tinkercad.com/"
   }
 },
 
@@ -111,7 +111,7 @@ const projetos = [
     resultados: "A cor do LED RGB variou conforme a distância detectada pelo sensor ultrassônico, demonstrando que a leitura do sensor era precisa e respondia corretamente às mudanças de proximidade.",
     discussao: "O uso do sensor ultrassônico foi fundamental para interatividade do projeto. A simulação no Tinkercad ajudou a evitar erros e garantiu a funcionalidade antes da montagem final. A integração do sensor com o LED RGB ilustrou o uso prático de sensores e LEDs em sistemas interativos.",
     conclusao: "O projeto foi concluído com sucesso. O sensor ultrassônico se mostrou uma ferramenta eficaz para alterar as cores do LED RGB de maneira dinâmica, de acordo com a proximidade de um objeto.",
-    referencias: "⦁ Tinkercad: https://www.tinkercad.com/"
+    referencias: "https://www.tinkercad.com/"
   }
 },
 
@@ -134,7 +134,7 @@ const projetos = [
     resultados: "O circuito físico funcionou conforme o esperado. Ao pressionar o botão, o LED acendeu, e ao soltar, o LED apagou. O sistema foi validado tanto no ambiente virtual quanto físico, com o código funcionando corretamente em ambas as plataformas.",
     discussao: "O uso do simulador Tinkercad foi essencial para verificar o comportamento do circuito antes da montagem física. Com ele, foi possível testar o código e identificar erros na configuração do botão e do LED sem a necessidade de montagens físicas complexas. Durante a implementação física, houve a necessidade de um pequeno ajuste no código para tratar a leitura do botão (debouncing), o que foi facilmente resolvido com o delay de 100 ms.",
     conclusao: "Este experimento demonstrou a importância da simulação no processo de desenvolvimento de circuitos eletrônicos e programação com Arduino. A interação com o push button foi perfeitamente validada, e o controle do LED foi bem-sucedido. O uso do simulador Tinkercad facilitou a identificação de falhas e a otimização do código, enquanto a montagem física confirmou a funcionalidade do sistema, proporcionando uma experiência prática valiosa.",
-    referencias: "● Tinkercad: https://tinkercad.com ● IDE Arduino: https://www.arduino.cc"
+    referencias: "https://tinkercad.com"
   }
 },
 
@@ -157,7 +157,7 @@ const projetos = [
     resultados: "O sistema funcionou conforme o esperado. O sensor ultrassônico mediu corretamente as distâncias e, com base nesses valores, o micro servo motor foi movido para o ângulo correspondente. O monitor serial exibiu as distâncias em centímetros, e o servo se movimentou de acordo com a leitura do sensor, demonstrando que o sistema estava operando de forma precisa.",
     discussao: "Durante o experimento, observamos que a precisão do sensor ultrassônico depende da superfície do objeto em frente a ele, sendo mais eficaz para superfícies planas e sólidas. O código foi ajustado para garantir que a distância fosse mapeada corretamente para os ângulos do servo motor. O sistema demonstrou uma resposta satisfatória e rápida às mudanças de distância. Uma questão relevante foi o comportamento do servo motor para distâncias extremas (muito próximas ou muito distantes). O mapeamento da distância para o ângulo do servo foi feito dentro de um intervalo seguro (0 a 180 graus), mas distâncias superiores a 100 cm resultaram em ângulos muito próximos de 180 graus, o que pode gerar movimentos indesejados.",
     conclusao: "O experimento foi bem-sucedido, mostrando como utilizar um sensor ultrassônico para controlar a posição de um micro servo motor de forma automatizada. O sistema é eficaz para medir distâncias e realizar ajustes no servo motor em tempo real, sendo útil para aplicações como robôs e sistemas de automação. A validação tanto no simulador quanto no ambiente físico mostrou a eficácia da solução proposta.",
-    referencias: "● Tinkercad: https://tinkercad.com ● IDE Arduino: https://www.arduino.cc ● Sensor Ultrassônico HC-SR04: Documentação do HC-SR04"
+    referencias: "https://tinkercad.com"
   }
 },
 
@@ -180,7 +180,7 @@ const projetos = [
     resultados: "O sistema funcionou conforme o esperado. Os potenciômetros foram lidos corretamente e, com base nesses valores, os servos foram movidos para os ângulos correspondentes. O sistema mostrou boa resposta aos ajustes realizados nos potenciômetros, controlando os servos de forma eficiente e precisa.",
     discussao: "Durante o experimento, observamos que a precisão do controle do servo estava diretamente relacionada à estabilidade das leituras dos potenciômetros. O código foi ajustado para garantir que as leituras fossem mapeadas corretamente para os ângulos dos servos. No entanto, notamos que o comportamento do sistema poderia ser melhorado com a implementação de filtros para evitar flutuações indesejadas nas leituras dos potenciômetros.",
     conclusao: "O experimento foi bem-sucedido, demonstrando como utilizar potenciômetros para controlar a posição de micro servo motores de forma precisa. O sistema é eficaz para aplicações de controle simples e pode ser expandido para sistemas mais complexos, como robótica e automação. A validação tanto no simulador quanto no ambiente físico mostrou a eficácia da solução proposta.",
-    referencias: "● Tinkercad: https://tinkercad.com ● IDE Arduino: https://www.arduino.cc"
+    referencias: "https://tinkercad.com"
   }
 }
 
