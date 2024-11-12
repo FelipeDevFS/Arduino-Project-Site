@@ -231,6 +231,15 @@ header .navigation a:hover {
     font-size: 13px;
 }
 
+.modal-content img {
+    width: 100%; /* Garante que a imagem ocupe 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 100%; /* Impede que a imagem ultrapasse a largura do modal */
+    border-radius: 10px; /* Mantém o estilo de borda arredondada, se desejado */
+    object-fit: cover; /* Ajusta a imagem ao tamanho do contêiner sem distorção */
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     header {
@@ -275,5 +284,11 @@ header .navigation a:hover {
     .btn-primary {
         font-size: 14px;
         padding: 8px 16px;
+    }
+
+    .modal-content img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
     }
 }
