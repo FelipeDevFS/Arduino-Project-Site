@@ -26,7 +26,7 @@ const projetos = [
     id: 'exampleModal2',
     titulo: 'Projeto 02',
     descricao: 'Neste projeto realizamos led controlado por um potenciômetro',
-    imgSrc: 'img/img02-PotenciometroArduino.jpg',
+    imgSrc: 'img/Projeto2Tinkercad.jpg',
     relatorio: {
         disciplina: 'Sistemas de Computação e de Informação',
         participantes: 'Arthur Vinicius Sena Campos, Gabriel Marcos Ferreira da Silva, Felipe Oliveira Carvalho, Juan Pablo Souza Chagas, Felipe Henrique dos Reis Martins, Hugo Mesquita Nunes, Danilo Claudino Carvalho',
